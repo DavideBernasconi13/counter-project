@@ -25,10 +25,13 @@ btns.forEach((button) => {
 
         //determino i colori
         if (initialCounter > 0) {
+              //se è maggiore di 0, sfondo verde e testo bianco (aggiungi classe Bootstrap)
             counterStyle.add('bg-success', 'text-light');
         } else if (initialCounter < 0) {
+            //se è minore di 0, sfondo rosso e testo bianco (aggiungi classe Bootstrap)
             counterStyle.add('bg-danger', 'text-light');
         } else {
+            // a 0 rimuovi tutte le classi
             counterStyle.remove('bg-danger', 'bg-dark', 'text-light', 'bg-success');
         }
     })
